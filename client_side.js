@@ -1,6 +1,6 @@
 function webSocketInit() {
     if ("WebSocket" in window) {
-        ws = new WebSocket("ws://localhost:");
+        ws = new WebSocket("ws://localhost:8001");
     }
     ws.onopen = function () {
         console.log("Connected. client_side.js file");

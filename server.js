@@ -7,7 +7,7 @@ const server = ws.createServer(function (conn) {
     conn.on("close",function(code,reason) {
         console.log("Connection close:", reason);
     });
-}).listen();
+}).listen(8001);
 
 
 
