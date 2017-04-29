@@ -46,24 +46,27 @@
 
     <main class="mdl-layout__content" id="content">
         <div class="page-content">
-            <ul class="mdl-list">
+            <div class="mdl-grid">
+            <ul class="mdl-list mdl-cell mdl-cell--middle">
                 <li class="mdl-list__item mdl-list__item--three-line">
-        <span class="mdl-list__item-primary-content">
-          <i class="material-icons  mdl-list__item-avatar">person</i>
-          <span>User name</span>
-          <span class="mdl-list__item-text-body">
-            Message text
-          </span>
-        </span>
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons  mdl-list__item-avatar">person</i>
+                        <span>User name</span>
+                        <span class="mdl-list__item-text-body">Message text</span>
+                    </span>
                 </li>
             </ul>
-
-            <div class="mdl-textfield mdl-js-textfield">
-                <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
-                <label class="mdl-textfield__label" for="message">Text lines...</label>
             </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sendMessage(1,2,socket)">Send message</button>
 
+            <div class="mdl-grid" id="inputArea">
+                <div class="mdl-cell mdl-cell--bottom">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
+                        <label class="mdl-textfield__label" for="message">Text lines...</label>
+                    </div>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sendMessage(1,2,socket)">Send message</button>
+                </div>
+            </div>
         </div>
     </main>
 </div>
